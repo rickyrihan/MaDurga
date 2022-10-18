@@ -3,16 +3,15 @@ from turtle import back, begin_fill, bgcolor, circle, color, end_fill, exitoncli
 
 bgcolor("yellow")
 speed(100)
+hideturtle()
 
 def position(x, y):
     penup()
     goto(x, y)
     pendown()
 
-
 sleep(5)
 position(0, 200)
-
 
 # Foot
 
@@ -21,7 +20,7 @@ begin_fill()
 circle(40)
 end_fill()
 
-# Selauri L
+# Left eyebrow
 
 position(-30, 200)
 begin_fill()
@@ -41,7 +40,7 @@ for i in range(20):
     forward(10)
 end_fill()
 
-# Selauri R
+# Right eyebrow
 
 left(80)
 position(30, 200)
@@ -61,7 +60,7 @@ for i in range(20):
     back(10)
 end_fill()
 
-# Soku R
+# Right eye
 
 position(40, 150)
 pensize(15)
@@ -90,7 +89,7 @@ position(115, 175)
 circle(10)
 end_fill()
 
-#Soku L
+# Left eye
 
 position(-40, 150)
 color("black")
@@ -120,7 +119,7 @@ position(-155, 175)
 circle(10)
 end_fill()
 
-#Naak
+# Nose
 
 color("black")
 position(-60, 10)
@@ -134,7 +133,7 @@ for i in range(12, 5, -1):
     left(7)
     forward(10)
 
-# Upor Uth
+# Upper Lip
 
 begin_fill()
 position(-130, -90)
@@ -175,7 +174,7 @@ for i in range(12):
     forward(7)
 end_fill()
 
-# Tolor Uth
+# Lower Lip
 
 begin_fill()
 left(175)
@@ -204,7 +203,7 @@ for i in range(7):
     forward(10)
 end_fill()
 
-# Naak Fuli
+# Nose Ring
 
 pensize(12)
 color("red")
@@ -214,7 +213,7 @@ for i in range(47):
     right(7)
     back(10)
 
-# Signature
+# Signature | It says "Rinmay"|
 
 left(110)
 pensize(2)
@@ -251,9 +250,7 @@ right(110)
 forward(35)
 left(140)
 forward(150)
-
 position(266, -195)
 circle(1)
 
-hideturtle()
 exitonclick()
